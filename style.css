@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.8;
+}
+
+#game-start-popup{
+  z-index: 2;
+  display: none !important;
+}
+
+#computerChoice {
+  width: 50%;
+  height: 200px;
+  background-color: gray;
+}
+
+#userChoice {
+  width: 50%;
+  height: 200px;
+  background-color: gray;
+}
