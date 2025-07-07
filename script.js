@@ -121,28 +121,22 @@ scissor[0].addEventListener("click", (event) => {
 
 });
 
-function winCheck(computerChoice, userChoice) {
+function winCheck(computerChoices, userChoices) {
 
-  if ((userChoice === "Stone" && computerChoice === "Scissor") ||
-    (userChoice === "Papper" && computerChoice === "Stone") ||
-    (userChoice === "Scissor" && computerChoice === "Papper")
+  if ((userChoices === "Stone" && computerChoices === "Scissor") ||
+    (userChoices === "Papper" && computerChoices === "Stone") ||
+    (userChoices === "Scissor" && computerChoices === "Papper")
 ) {
     userScore++;
     scoreDisplay();
-    setTimeout(() => {
-      alert("Computer Win");
-    }, 1000);
-  } else if ((computerChoice === "Stone" && userChoice === "Scissor") ||
-    (computerChoice === "Papper" && userChoice === "Stone") ||
-    (computerChoice === "Scissor" && userChoice === "Papper")) {
-    setTimeout(() => {
-      alert("Computer Win");
-    }, 900);
-    computerScore++;
+  } else if ((computerChoices === "Stone" && userChoices === "Scissor") ||
+    (computerChoices === "Papper" && userChoices === "Stone") ||
+    (computerChoices === "Scissor" && userChoices === "Papper")) {
     scoreDisplay();
+    computerScore++;
   }
   else {
-    alert("Draw");
+    
   }
 
 }
